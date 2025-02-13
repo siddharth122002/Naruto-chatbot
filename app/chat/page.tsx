@@ -5,6 +5,7 @@ import { CiLocationArrow1 } from "react-icons/ci";
 
 const AllCharacters = [
   "Naruto",
+  "Madara",
   "Itachi",
   "Jiraiya",
   "Sasuke",
@@ -13,6 +14,7 @@ const AllCharacters = [
   "Hinata",
   "Sakura",
   "Kakashi",
+  "Hashirama",
 ];
 const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_GOOGLE_API_KEY!);
 
