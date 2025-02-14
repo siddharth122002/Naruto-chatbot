@@ -72,7 +72,7 @@ export default function Home() {
           id="par"
           className="h-screen w-full bg-black flex justify-center absolute z-30 top-0 items-center overflow-hidden"
         >
-          <div id="eye" className="w-32 h-32 relative">
+          <div id="eye" className="w-32 h-32 scale-0 relative">
             <Image
               src="/sharingan.jpg"
               fill
