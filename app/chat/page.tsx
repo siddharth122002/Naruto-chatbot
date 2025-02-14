@@ -83,7 +83,7 @@ function Chatbot() {
           {chatArr.map((chat, i) => (
             <div
               key={i}
-              className={`bg-zinc-700 rounded-md text-xl w-2/3 mx-auto p-2 mb-8 ${
+              className={`bg-zinc-700 rounded-md text-xl md:w-2/3 w-[90vw] m-auto p-2 mb-8 ${
                 chat.role === "user" ? "text-right" : "text-left text-gray-300"
               }`}
             >
@@ -92,7 +92,7 @@ function Chatbot() {
           ))}
           {loading && (
             <div
-              className={`bg-zinc-700 rounded-md text-xl w-2/3 mx-auto p-2 flex justify-start items-center mb-8 h-8 text-left text-gray-300`}
+              className={`bg-zinc-700 rounded-md text-xl md:w-2/3 w-[90vw] m-auto p-2 flex justify-start items-center mb-8 h-8 text-left text-gray-300`}
             >
               <div className="w-3 h-3 ml-3 rounded-full border-t-2 border-b-2 animate-spin"></div>
             </div>
@@ -101,7 +101,7 @@ function Chatbot() {
         </div>
 
         <div
-          className={`bg-zinc-700 rounded-xl w-2/3 mx-auto p-3 ${
+          className={`bg-zinc-700 rounded-xl md:w-2/3 w-[90vw] m-auto p-3 ${
             !firstChat
               ? "fixed bottom-10 left-1/2 transform -translate-x-1/2"
               : ""

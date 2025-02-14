@@ -31,20 +31,6 @@ export default function Home() {
   }, []);
   useGSAP(
     () => {
-      const tl = gsap.timeline({ repeat: -1 });
-      tl.to(".glow", {
-        filter: "drop-shadow(0 0 10px #d40000) drop-shadow(0 0 40px #d40000)",
-        duration: 1.7,
-      });
-      tl.to(".glow", {
-        filter: "drop-shadow(0 0 0px #d40000) drop-shadow(0 0 0px #d40000)",
-        duration: 1.7,
-      });
-    },
-    { dependencies: [], revertOnUpdate: false }
-  );
-  useGSAP(
-    () => {
       const tl = gsap.timeline();
       tl.to("#eye", {
         duration: 1,
@@ -74,7 +60,7 @@ export default function Home() {
         >
           <div id="eye" className="w-32 h-32 scale-0 relative">
             <Image
-              src="/sharingan.jpg"
+              src="/sharingan.webp"
               fill
               alt="eye"
               priority
@@ -92,16 +78,17 @@ export default function Home() {
             loop
             playsInline
             controlsList="nodownload nofullscreen noplaybackrate"
-            src="/madara.mp4"
+            src="/madara.webm"
             className="w-full absolute top-0 z-10 h-full object-cover"
           />
         </div>
-        <div className="text-[10vw] font-bold text-center text-white drop-shadow-[0_0_10px_#000000]">
-          NARUTO Chatbot
+        <div className="text-[10vw] font-bold text-center bg-gradient-to-t from-transparent via-white to-transparent text-transparent bg-clip-text drop-shadow-[0_0_10px_#000000]">
+          NARUTO CHATBOT
         </div>
-        <div className="text-md gap-5 uppercase font-semibold text-center text-white flex justify-center items-center flex-col absolute bottom-10 left-0 right-0 drop-shadow-[0_0_10px_#000000]">
+
+        <div className=" gap-5 uppercase font-semibold text-center text-white flex justify-center items-center flex-col absolute bottom-10 left-0 right-0 text-sm">
           <a href="/chat" target="_blank">
-            <button className="glow uppercase font-darumadrop text-3xl font-bold">
+            <button className="drop-shadow-[0_0_10px_#000000] animate-pulse uppercase text-3xl ">
               try now
             </button>
           </a>
