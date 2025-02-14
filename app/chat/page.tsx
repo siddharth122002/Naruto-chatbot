@@ -51,7 +51,7 @@ function Chatbot() {
       .map((chat) => `${chat.role}: ${chat.text}`)
       .join("\n");
     const prompt = `${history}\n${character}:`;
-    console.log(prompt);
+
     const result = await model.generateContent(prompt);
     const res = await result.response.text();
 
