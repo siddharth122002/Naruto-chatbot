@@ -77,6 +77,7 @@ export default function Home() {
               src="/sharingan.jpg"
               fill
               alt="eye"
+              priority
               className="w-full absolute top-0 z-10 h-full object-cover"
             />
           </div>
@@ -89,13 +90,10 @@ export default function Home() {
             muted
             autoPlay
             loop
-            disablePictureInPicture
+            playsInline
             controlsList="nodownload nofullscreen noplaybackrate"
             src="/madara.mp4"
             className="w-full absolute top-0 z-10 h-full object-cover"
-            onLoad={() => {
-              setLoading(false);
-            }}
           />
         </div>
         <div className="text-[10vw] font-bold text-center text-white drop-shadow-[0_0_10px_#000000]">
